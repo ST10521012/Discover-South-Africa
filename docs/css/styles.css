@@ -1,0 +1,405 @@
+/*1*/
+* {
+    margin: 0;
+    padding: 0.1;
+    box-sizing: border-box;
+}
+/*2*/
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: azure;
+    background-color: aliceblue;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-width:400px;
+}
+body, input, button{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif; 
+    color:aliceblue;
+}
+body{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+/*3*/
+header {
+    background-color: #12372a;
+    color: ghostwhite;
+    padding: 1.2rem 5%;
+    text-align: center;
+}
+header h1{
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+header p {
+    font-size: 1rem;
+}
+/*4*/
+nav {
+    background-color: bisque;
+    padding: 1rem 5%;
+}
+
+nav ul {
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration:wavy;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background-color: lavender;
+    color: black;
+}
+
+nav a:focus {
+    outline: 2px solid darkgrey;
+}
+
+/*5*/
+.hero {
+    min-height: 60vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 4rem 3%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("images/Sun city.jpg"));
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+
+.hero p {
+    max-width: 50rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/*6*/
+.button{
+    display: inline-block;
+    background-color: blanchedalmond;
+    color: beige;
+    text-decoration: none;
+
+    padding: 10px;
+    border-radius: 2px solid black;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+
+    height:20px;
+    width: 40px;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: whitesmoke;
+    transform: translateY(-2.5px);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+.centered-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+}
+
+/*7*/
+section{
+    .top-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+    .left-side, .middle-part,.right-side{
+
+        display: flex;
+        gap: 1.5res;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle-section{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.5rem 0;
+}
+
+section h2 {
+    text-align: center;
+    color: honeydew;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+/*8*/
+.attractions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/*9*/
+.card{
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card h3 {
+    color: lightcoral;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+.card p {
+    margin-bottom: 1rem;
+}
+
+/*10*/
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    align-items: center;
+}
+
+.about img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+
+/*11*/
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+
+    background-color: #fff;
+    padding: 2rem;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid lightcyan;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    outline: none;
+    border-color: darkorchid;
+    box-shadow: 0 0 5px rgba(244, 180, 0, 0.5);
+}
+
+/*12*/
+
+footer {
+    background-color: royalblue;
+    color: azure;
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: lightcyan;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*13*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*14*/
+@media screen and(max-width: 900px) {
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .attractions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*15*/
+
+@media screen and(max-width: 600px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 1.2rem 5%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 50vh;
+        padding: 3rem 5%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        width: 92%;
+        padding: 2.5rem 0;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .attrations {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-text h2 {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
